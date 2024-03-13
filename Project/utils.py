@@ -2,7 +2,7 @@ import pickle
 import json
 import numpy as np
 import config
-
+# making a change here
 class MedicalInsurance():
     def __init__(self,age,gender,bmi,children,smoker,region):
         self.age      = age
@@ -11,7 +11,6 @@ class MedicalInsurance():
         self.children = children
         self.smoker   = smoker.lower()
         self.region   = "region_" + region
-
     def load_model(self):
         # we are reading model and json file"
         with open(config.MODEL_FILE_PATH,"rb") as file:
